@@ -1,6 +1,6 @@
 Hello Team,
 
-This project is made using php, mysql, bootstrap, jquery, html5, css. Please find below the specifications for the project:
+This is a demo JOB PORTAL project is made using php, mysql, bootstrap, jquery, html5, css. Please find below the specifications for the project:
 
 Resources Used:
 
