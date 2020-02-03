@@ -34,7 +34,7 @@ $cn=@mysqli_connect('localhost','root','','ndjobs');
       
  
       // Run the effect
-      $( "#effect" ).effect( selectedEffect, options, 500, callback );
+      $( "#effect" ).effect( selectedEffect, options, 1000, callback );
     };
  
     // Callback function to bring a hidden box back
@@ -98,7 +98,8 @@ $cn=@mysqli_connect('localhost','root','','ndjobs');
 <div class="container">
 <div class="row">
 <div class="col-xl-12">
-<h1>Welcome <?php echo $_SESSION['seekername'];?></h1>
+<h1>Welcome <?php echo $_SESSION['seekername'];?></h1><br>
+<h3>Jobs Applied :</h3>
 </div>
 </div>
 </div>

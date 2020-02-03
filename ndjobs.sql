@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jan 31, 2020 at 01:05 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Host: 127.0.0.1
+-- Generation Time: Feb 03, 2020 at 12:47 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.2.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,9 +39,8 @@ CREATE TABLE `appliedjobs` (
 --
 
 INSERT INTO `appliedjobs` (`jobid`, `seekeremail`, `provideremail`) VALUES
-(7, 'nik@gmail.com', 'stream@gmail.com'),
-(7, 'sdak@gmail.com', 'stream@gmail.com'),
-(18, 'gagangmail.com', 'nik@gmail.com');
+(19, 'nikhlesh@gmail.com', 'nik@gmail.com'),
+(23, 'nikhlesh@gmail.com', 'nik2@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -66,11 +65,11 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`email`, `jobid`, `title`, `company`, `location`, `yoe`, `salary`, `description`, `keywords`) VALUES
-('stream@gmail.com', 7, 'Engineer', 'infosys', 'Noida', '2+', '10 lac', 'Stream is hiring new members.', 'engineer, noida, infosys,'),
-('stream@gmail.com', 8, 'Web Designer', '99acres', 'gurgaon', '2+', '12 lac', 'MBBS required.', 'web, designer, web designer, 99acres, gurgaon,'),
-('deep@gmail.com', 10, 'Salesman', 'Audi', 'Chandigarh', '2+', '13 lac', '8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 th pass8 t', 'salesman, audi, chandigarh,'),
-('deep@gmail.com', 11, 'ssp', 'punjab Police', 'Patiala', '2+', '15 lac', 'Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...EntEnter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Enter text here...Ent', 'ssp, punjab, patiala, police, punjab police,'),
-('nik@gmail.com', 18, 'Hello', 'Stream Infotech', 'HEllo', '1+', '12 lac', 'sada', 'keywords');
+('nik@gmail.com', 19, 'Web Developer', 'ndjobs', 'toronto', '2+', '60000', 'Web developer needed', 'toronto,web,developer,ndjobs,'),
+('nik@gmail.com', 20, 'JAVA Developer', 'IBM', 'Missisauga', '2+', '70000', 'Java developer needed', 'java,developer,missisauga,ibm,'),
+('nik@gmail.com', 21, 'Merhandise Handler', 'Gap', 'Brampton', 'Fresher', '30000', 'Associate needed', 'gap,handler,associate,merchandise,brampton,'),
+('nik@gmail.com', 22, 'Customer Care Executive', 'TD Bank', 'Brampton', '1+', '50000', 'CRM expert needed', 'td,bank,crm,customer,care,executive,brampton,'),
+('nik2@gmail.com', 23, 'Delivery Agent', 'Canada Post', 'toronto', 'Fresher', '30000', 'Delivery agent needed', 'canada,post,toronto,delivery,agent,');
 
 -- --------------------------------------------------------
 
@@ -89,9 +88,8 @@ CREATE TABLE `regprovider` (
 --
 
 INSERT INTO `regprovider` (`providername`, `email`, `password`) VALUES
-('Deepanshu', 'deep@gmail.com', '111111'),
-('ndJOBS', 'nik@gmail.com', '111111'),
-('Stream', 'stream@gmail.com', '111111');
+('nik2', 'nik2@gmail.com', '111111'),
+('nik', 'nik@gmail.com', '111111');
 
 -- --------------------------------------------------------
 
@@ -115,13 +113,7 @@ CREATE TABLE `regseeker` (
 --
 
 INSERT INTO `regseeker` (`firstname`, `lastname`, `email`, `password`, `dob`, `gender`, `phone`, `curaddress`) VALUES
-('deep', 'mittal', 'deep@gmail.com', '111111', '2019-04-05', 'Male', 1212121212, 'nabha'),
-('Gagan', 'singh', 'gagangmail.com', '12345678', '2111-12-12', 'Male', 1234567890, 'Nabha'),
-('Nikhlesh', 'Taneja', 'nik1@gmail.com', '111111', '2019-05-02', 'Male', 1234512345, 'patiala'),
-('Nikhlesh', 'Taneja', 'nik@gmail.com', '111111', '1990-12-07', 'Male', 8054151662, '#5283 Arorian Street, Patiala'),
-('Nikhlesh', 'Taneja', 'niku@gmail.com', '111111', '2019-05-14', 'Male', 1111122222, 'patiala'),
-('Nikhlesh1', 'Taneja', 'nikwsde@gmail.com', '111111', '2019-05-06', 'Male', 1234512345, '#5283 Arorian Street, Patiala'),
-('asd', 'asd', 'sdak@gmail.com', '111111', '2019-04-10', 'Male', 1212121212, 'nabha');
+('Nikhlesh', 'Taneja', 'nikhlesh@gmail.com', '111111', '1990-12-07', 'Male', 4165093793, 'Brampton');
 
 -- --------------------------------------------------------
 
@@ -147,13 +139,7 @@ CREATE TABLE `seekerdata` (
 --
 
 INSERT INTO `seekerdata` (`email`, `qualification`, `course`, `college`, `yop`, `designation`, `company`, `yoe`, `ctc`, `resumefname`) VALUES
-('deep@gmail.com', 'High School', 'BA', 'nabha college', '2018', 'designer', 'stream', '1+', '3 lac', ''),
-('gagangmail.com', 'Ph.D', 'BCA', 'jb', 'ytfc', 'yugv', 're1', '3+', '2lac', ''),
-('nik1@gmail.com', '', '', '', '', '', '', '', '', ''),
-('nik@gmail.com', 'High School', 'B.Tech', 'LPU', '2013', 'Web Developer', 'Stream Infotech', '2+', '5 lac', '5ccaba5acb128.pdf'),
-('niku@gmail.com', '', '', '', '', '', '', '', '', ''),
-('nikwsde@gmail.com', 'High School', 'BBA', 'LPU', '2013', 'Web Developer', 'Stream Infotech', '1+', '5 lakjkj', ''),
-('sdak@gmail.com', 'High School', 'BA', 'nabha college', '2018', 'designer', 'stream', '5+', '3 lac', '');
+('nikhlesh@gmail.com', 'Graduation', 'B.Tech', 'Lovely Professional University', '2013', 'Web Developer', 'Stream Infotech', '2+', '50000', '5e375c44a8e50.doc');
 
 --
 -- Indexes for dumped tables
@@ -199,7 +185,7 @@ ALTER TABLE `seekerdata`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `jobid` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `jobid` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Constraints for dumped tables
